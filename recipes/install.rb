@@ -16,7 +16,7 @@ git '/opt/docker-registry' do
   user       node[:docker_registry_simple][:user]
   group      node[:docker_registry_simple][:group]
   action     :checkout
-  notifies   :run, 'bash[docker-registry-pip-requirements]'
+  notifies   :run, 'bash[docker-registry-pip-requirements]', :immediately
 end
 
 ## install python deps
