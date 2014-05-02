@@ -2,7 +2,7 @@
 
 This is a ludicrously simple cookbook to get
 [docker-registry](https://github.com/dotcloud/docker-registry) running
-on something that looks like ubuntu.
+on something that looks vaguely like ubuntu.
 
 You are on your own for nginx setup and redis (for LRU cache), but
 that's ok, you probably have cookbooks for those already.
@@ -32,7 +32,7 @@ for configuration options.
   "docker_registry_simple": {
     "config": {
       "common": {
-        "secret_key" => "...",
+        "secret_key": "...",
         "standalone": true
       },
       "dev": {
