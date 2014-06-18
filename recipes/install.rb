@@ -21,7 +21,7 @@ end
 
 ## install python deps
 bash 'docker-registry-pip-requirements' do
-  cwd 'opt/docker-registry'
+  cwd '/opt/docker-registry'
   code 'pip install -r requirements.txt'
   action :nothing
 end
