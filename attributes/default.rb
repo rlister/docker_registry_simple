@@ -1,4 +1,4 @@
-default[:docker_registry_simple][:version] = '0.6.8'
+default[:docker_registry_simple][:version] = '0.7.2'
 
 default[:docker_registry_simple][:user]    = 'www-data'
 default[:docker_registry_simple][:group]   = 'www-data'
@@ -29,5 +29,5 @@ default[:docker_registry_simple][:config] = {
       :port => 6379,
     },
   },
-  
+
 }
