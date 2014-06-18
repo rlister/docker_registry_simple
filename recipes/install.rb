@@ -15,7 +15,7 @@ git '/opt/docker-registry' do
   reference  node[:docker_registry_simple][:version]
   user       node[:docker_registry_simple][:user]
   group      node[:docker_registry_simple][:group]
-  action     :checkout
+  action     :sync
   notifies   :run, 'bash[docker-registry-pip-requirements]', :immediately
 end
 
