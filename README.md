@@ -14,7 +14,7 @@ The steps used here are based on
 
 Attribute | Description | Type | Default
 ----------|-------------|------|--------
-`[:docker_registry_simple][:version]` | Git tag to install | String | `0.6.8`
+`[:docker_registry_simple][:version]` | Git tag to install | String | `0.7.2`
 `[:docker_registry_simple][:user]`    | User to run gunicorn processes | String | `www-data`
 `[:docker_registry_simple][:group]`   | User to run gunicorn processes | String | `www-data`
 `[:docker_registry_simple][:config]`  | Hash will be emitted as config.yml | Hash | see attributes
